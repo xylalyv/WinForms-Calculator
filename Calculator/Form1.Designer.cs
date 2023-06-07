@@ -64,6 +64,7 @@
             acButton.TabIndex = 1;
             acButton.Text = "C";
             acButton.UseVisualStyleBackColor = true;
+            acButton.Click += btn_clear_Click;
             // 
             // number1
             // 
@@ -73,6 +74,7 @@
             number1.TabIndex = 2;
             number1.Text = "1";
             number1.UseVisualStyleBackColor = true;
+            number1.Click += btnNumber_Click;
             // 
             // number2
             // 
@@ -82,6 +84,7 @@
             number2.TabIndex = 3;
             number2.Text = "2";
             number2.UseVisualStyleBackColor = true;
+            number2.Click += btnNumber_Click;
             // 
             // number4
             // 
@@ -170,6 +173,7 @@
             posnegButton.TabIndex = 12;
             posnegButton.Text = "+/-";
             posnegButton.UseVisualStyleBackColor = true;
+            posnegButton.Click += btn_plus_Minus_Click;
             // 
             // number0
             // 
@@ -189,17 +193,19 @@
             dotButton.TabIndex = 15;
             dotButton.Text = ".";
             dotButton.UseVisualStyleBackColor = true;
+            dotButton.Click += btn_point_Click;
             // 
             // clearOneDigitButton
             // 
-            clearOneDigitButton.BackColor = SystemColors.MenuBar;
+            clearOneDigitButton.BackColor = Color.Transparent;
             clearOneDigitButton.BackgroundImage = (Image)resources.GetObject("clearOneDigitButton.BackgroundImage");
-            clearOneDigitButton.BackgroundImageLayout = ImageLayout.Stretch;
+            clearOneDigitButton.BackgroundImageLayout = ImageLayout.Center;
             clearOneDigitButton.Location = new Point(270, 117);
             clearOneDigitButton.Name = "clearOneDigitButton";
             clearOneDigitButton.Size = new Size(80, 80);
             clearOneDigitButton.TabIndex = 16;
             clearOneDigitButton.UseVisualStyleBackColor = false;
+            clearOneDigitButton.Click += btn_BackSpace_Click;
             // 
             // percButton
             // 
@@ -209,6 +215,7 @@
             percButton.TabIndex = 17;
             percButton.Text = "%";
             percButton.UseVisualStyleBackColor = true;
+            percButton.Click += btn_operator_Click;
             // 
             // reverseButton
             // 
@@ -237,7 +244,7 @@
             divisionButton.TabIndex = 20;
             divisionButton.Text = "÷";
             divisionButton.UseVisualStyleBackColor = true;
-            divisionButton.Click += btnOperator_Click;
+            divisionButton.Click += btn_operator_Click;
             // 
             // squareRootButton
             // 
@@ -245,7 +252,7 @@
             squareRootButton.Name = "squareRootButton";
             squareRootButton.Size = new Size(80, 80);
             squareRootButton.TabIndex = 21;
-            squareRootButton.Text = "V2";
+            squareRootButton.Text = "√x";
             squareRootButton.UseVisualStyleBackColor = true;
             // 
             // multiplationButton
@@ -256,7 +263,7 @@
             multiplationButton.TabIndex = 22;
             multiplationButton.Text = "X";
             multiplationButton.UseVisualStyleBackColor = true;
-            multiplationButton.Click += btnOperator_Click;
+            multiplationButton.Click += btn_operator_Click;
             // 
             // plusButton
             // 
@@ -266,7 +273,7 @@
             plusButton.TabIndex = 23;
             plusButton.Text = "+";
             plusButton.UseVisualStyleBackColor = true;
-            plusButton.Click += btnOperator_Click;
+            plusButton.Click += btn_operator_Click;
             // 
             // minusButton
             // 
@@ -276,7 +283,7 @@
             minusButton.TabIndex = 24;
             minusButton.Text = "-";
             minusButton.UseVisualStyleBackColor = true;
-            minusButton.Click += btnOperator_Click;
+            minusButton.Click += btn_operator_Click;
             // 
             // equalButton
             // 
@@ -287,7 +294,7 @@
             equalButton.TabIndex = 25;
             equalButton.Text = "=";
             equalButton.UseVisualStyleBackColor = false;
-            equalButton.Click += btnEquals_Click;
+            equalButton.Click += btn_equal_Click;
             // 
             // label1
             // 
